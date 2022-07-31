@@ -1,0 +1,59 @@
+
+/*Performance Test 2*/
+/*Flex Template CSS*/
+
+.fcontainer {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 	
+  }
+  
+  .fbox
+  {
+      padding: 10px;
+      margin: 10px;		
+      flex-basis: 3in; /*inches vs pixels supports flex on smaller viewports.*/
+      /* flex: 1 2 3in; */ /* shorthand* for flex-grow, flex-shrink, flex-basis */
+      min-width: 1px;
+  }
+  
+  /*Start of Text Style*/
+  .label
+  {
+      font-family: verdana;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      margin: auto;
+  }
+  
+  /*Start of header style*/
+  header
+  {
+    order: 1;
+    flex-grow: 1;
+    background-color: #FF958D;
+  }
+  /*End of header style*/
+  
+  
+  /*Start of article style*/
+  article
+  {
+      order: 1;
+      flex-grow: 1;
+      background-color: #8DD6FF;
+  }
+  
+  /*End of article style*/
+  
+  
+  /*Start of footer style*/
+  footer
+  {
+      background-color: #CAFB99;
+      order: 1;
+      flex-grow: 1;
+  }
+  /*End of footer style*/
